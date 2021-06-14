@@ -1,0 +1,52 @@
+.content{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* grid-auto-rows: 2fr; */
+    grid-auto-flow: dense;
+}
+
+h2{
+    color: blue;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.nav-item a {
+    color:slategrey;
+}
+.rasim{
+    width: 98%;
+    
+}
+img{
+    
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.clearablefileinput {
+    background-color:green;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    
+}
+.kurish{
+    color: rgb(199, 195, 195);
+    margin-left: 10px;
+}
+i{
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+h1{
+    color: red;
+}
+

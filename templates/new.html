@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% if user.is_authenticated%}
+<div class="container mt-4 ">
+    <div class=" row ">
+        <div class=' mt-3 col-12 '>
+            <form method='post' enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form|crispy}}
+                <button type='submit' class="btn btn-success mt-2 w-25">Taxrirlash</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endif %}
+{% endblock content %}
