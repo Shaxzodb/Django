@@ -22,7 +22,7 @@ class AlerCreateViews(LoginRequiredMixin,CreateView):
     success_url=reverse_lazy('article')
     login_url='login'
     def form_valid(self, form):
-        form.isinstance.author = self.request.user
+        form.instance.author = self.request.user
         return super().form_valid(form)
 
 class AlerDeleteViews(UserPassesTestMixin,LoginRequiredMixin,DeleteView):
